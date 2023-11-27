@@ -98,7 +98,7 @@ const Navbar = () => {
                     <li className='mx-6 hover:text-gray-800 cursor-pointer'>About</li>
                 </ul>
             </div>
-            <div className='hidden md:flex font-epilogue text-[15px] items-center text-gray-600'>
+            <div className='hidden md:flex transition-all duration-700font-epilogue text-[15px] items-center text-gray-600'>
                 <button className='h-[50px] w-[110px] mx-2 rounded-xl hover:text-gray-800'>Login</button>
                 <button className='border-2 border-gray-400 h-[50px] w-[110px] mx-5 rounded-xl hover:text-gray-800 hover:border-gray-800'>Register</button>
             </div>
@@ -119,7 +119,7 @@ const Navbar = () => {
                     </div>
                     <ul className='text-gray-600 font-epilogue text-[18px] flex flex-col ml-[25px] mt-6'>
                         <li className='flex items-center cursor-pointer my-3' onClick={toggleSideFae}>Features<img src={sideFae ? upArrow : downArrow} className='h-[8px] ml-[18px]' /></li>
-                        <div className={`${sideFae ? 'h-full' : 'h-[0px] overflow-hidden'} ml-[35px] flex flex-col transition-all duration-700`}>
+                        <div className={`${sideFae ? 'h-full' : 'h-[0px]'} overflow-hidden ml-[35px] flex flex-col transition-all duration-700`}>
                             <ul className='my-[15px]'>
                                 <li className='flex items-start my-2.5 '><img src={todo} alt='todo icon' className='h-[20px] w-5 mr-2' />Todo List</li>
                                 <li className='flex  items-start my-2.5 '><img src={calender} alt='calender icon' className='h-[20px] w-5 mr-2' />Calendar</li>
