@@ -23,7 +23,7 @@ const DropDown = ({ name, items }) => {
     return (
         <div>
             <li className={swi ? 'flex items-center mx-6 text-gray-800 cursor-pointer' : 'flex items-center mx-6 hover:text-gray-800 cursor-pointer'} onClick={toggle}>{name}<img src={swi ? upArrow : downArrow} alt='arrow' className='h-[8px] mx-2' /></li>
-            <div className={swi ? 'absolute top-20 w-[160px] h-[160px] shadow-2xl rounded-xl flex flex-col justify-center bg-white transition-all duration-700' : 'h-[0px] overflow-hidden'}>
+            <div className={swi ? 'absolute top-20 w-[160px] h-[160px] shadow-2xl rounded-xl flex flex-col justify-center bg-white transition-all duration-700' : 'hidden'}>
                 <ul className='flex flex-col text-gray-600 font-epilogue text-[15px]'>
                     {items.map((item, index) => (
                         <li key={index} className='flex  items-start my-1.5 mx-auto'><img src={item.image} alt='icon' className='h-[20px] w-5 mr-2' />{item.name}</li>
@@ -101,7 +101,7 @@ const Navbar = () => {
             <div className='flex items-center mr-8'>
                 <img src={menu} alt='menuIcon'className={Sidenav ? 'hidden' : 'flex h-[22px] cursor-pointer md:hidden'} onClick={toggleSidenav} />
             </div>
-            <div className={Comnav ? 'absolute top-20 ml-[320px] w-[120px] h-[100px] shadow-2xl rounded-xl flex flex-col justify-center bg-white' : 'hidden'}>
+            <div className={Comnav ? 'absolute top-20 ml-[370px] w-[120px] h-[100px] shadow-2xl rounded-xl flex flex-col justify-center bg-white' : 'hidden'}>
                 <ul className='flex flex-col text-gray-600 font-epilogue text-[15px] items-center'>
                     <li className='my-1'>History</li>
                     <li className='my-1'>Our Team</li>
