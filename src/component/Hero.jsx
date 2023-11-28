@@ -18,15 +18,15 @@ const Hero = () => {
                 <button className='h-[50px] bg-black w-[150px] font-epilogue text-[15px] text-white rounded-xl mb-[50px] hover:bg-white hover:text-black hover:border-2 hover:border-black transition-all duration-300 ease-out'>Learn more</button>
             </div>
             <div className='flex items-center justify-between md:max-w-[580px] max-w-[350px] h-[50px] md:mt-[50px] md:ml-[0px] ml-[5px]'>
-                <img src={databiz} width={90} className='md:h-[20px] mx-1'/>
-                <img src={audio} width={60} className='md:h-[32px] mx-1'/>
-                <img src={meet} width={78} className='md:h-[20px] mx-1'/>
-                <img src={maker} width={85} className='md:h-[30px] mx-1'/>
+                <img src={databiz} alt='dataimg' width={90} className='md:h-[20px] mx-1'/>
+                <img src={audio} alt='audioimg' width={60} className='md:h-[32px] mx-1'/>
+                <img src={meet} alt='meetimg' width={78} className='md:h-[20px] mx-1'/>
+                <img src={maker} alt='makerimg' width={85} className='md:h-[30px] mx-1'/>
             </div>    
         </div>
         <div className='md:w-[600px] w-full flex flex-col justify-center md:order-2 order-1'>
-            <img src={heroimg} max-width={550} className='hidden md:flex h-[620px] md:mb-[40px] mx-8'/>
-            <img src={heromob} max-width={300} className='md:hidden h-[100%] '/>
+            <img src={heroimg} alt='deskimg' max-width={550} className='hidden md:flex h-[620px] md:mb-[40px] mx-8'/>
+            <img src={heromob} alt='mobileimg' max-width={300} className='md:hidden h-[100%] '/>
         </div>
     </div>
   )
