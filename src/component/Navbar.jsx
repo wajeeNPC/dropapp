@@ -119,7 +119,7 @@ const Navbar = () => {
                     </div>
                     <ul className='text-gray-600 font-epilogue text-[18px] flex flex-col ml-[25px] mt-6'>
                         <li className='flex items-center cursor-pointer my-3' onClick={toggleSideFae}>Features<img src={sideFae ? upArrow : downArrow} className='h-[8px] ml-[18px]' /></li>
-                        <div className={`${sideFae ? 'h-full' : 'h-[0px]'} overflow-hidden ml-[35px] flex flex-col transition-all duration-700`}>
+                        <div className={`${sideFae ? 'h-full' : 'h-[0px]'} overflow-hidden ml-[35px] flex flex-col transition-all duration-300`}>
                             <ul className='my-[15px]'>
                                 <li className='flex items-start my-2.5 '><img src={todo} alt='todo icon' className='h-[20px] w-5 mr-2' />Todo List</li>
                                 <li className='flex  items-start my-2.5 '><img src={calender} alt='calender icon' className='h-[20px] w-5 mr-2' />Calendar</li>
@@ -128,7 +128,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <li className='flex items-center cursor-pointer my-3' onClick={toggleSideCom}>Company<img src={sideCom ? upArrow : downArrow} className='h-[8px] ml-[15px]' /></li>
-                        <div className={sideCom ? 'flex flex-col ml-[35px]' : 'hidden'}>
+                        <div className={`${sideCom ? 'h-full' : 'h-[0px]'} overflow-hidden transition-all duration-300 flex flex-col ml-[35px]`}>
                             <ul className='my-[15px]'>
                                 <li className='my-2.5'>History</li>
                                 <li className='my-2.5'>Our Team</li>
